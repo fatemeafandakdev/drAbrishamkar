@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/drAbrishamkar/static/css/main.3cbb9540.css",
+    "main.js": "/drAbrishamkar/static/js/main.c1f5d621.js",
+    "static/js/453.022d38ce.chunk.js": "/drAbrishamkar/static/js/453.022d38ce.chunk.js",
+    "static/media/banner.png": "/drAbrishamkar/static/media/banner.b4a6c87054f1c719908b.png",
+    "static/media/ms.png": "/drAbrishamkar/static/media/ms.3d048630b9a7ebbdff27.png",
+    "static/media/BYekan+.ttf": "/drAbrishamkar/static/media/BYekan+.f26972c64b83c2aea5ca.ttf",
+    "static/media/zone1.png": "/drAbrishamkar/static/media/zone1.12ac3e86ce736719625a.png",
+    "static/media/location.png": "/drAbrishamkar/static/media/location.a8cd3da22af06b5dc3f2.png",
+    "static/media/zone2.png": "/drAbrishamkar/static/media/zone2.a4c987393bd5e2b2e2bc.png",
+    "static/media/zone4.png": "/drAbrishamkar/static/media/zone4.3939ddabf6df6f4163a0.png",
+    "static/media/zone3.png": "/drAbrishamkar/static/media/zone3.f2b911d55a0d7b838878.png",
+    "static/media/pain3.jpg": "/drAbrishamkar/static/media/pain3.9b44610cf88de0e96aa2.jpg",
+    "static/media/tomur.jpg": "/drAbrishamkar/static/media/tomur.8b1d62d0c0c301fe43f5.jpg",
+    "static/media/drabrishamkar.png": "/drAbrishamkar/static/media/drabrishamkar.7aa3657163954dd1f40c.png",
+    "static/media/pain2.jpg": "/drAbrishamkar/static/media/pain2.f7977d6b1aab46c493e1.jpg",
+    "static/media/prm1.jpg": "/drAbrishamkar/static/media/prm1.c4b2b574859a8a63578f.jpg",
+    "static/media/prm6.jpg": "/drAbrishamkar/static/media/prm6.c13ac4a018b4fe7042df.jpg",
+    "static/media/prm2.jpeg": "/drAbrishamkar/static/media/prm2.8a06e08b20c4cdf06674.jpeg",
+    "static/media/tomur2.jpg": "/drAbrishamkar/static/media/tomur2.13276591c3a7c06b68a7.jpg",
+    "static/media/pain1.jpg": "/drAbrishamkar/static/media/pain1.2ff6921e725f9f92f011.jpg",
+    "static/media/tomur3.jpg": "/drAbrishamkar/static/media/tomur3.19d3dd8a8c5d8f8334fb.jpg",
+    "static/media/drabrisham.png": "/drAbrishamkar/static/media/drabrisham.00285707495ea7a1befe.png",
+    "static/media/prm3.jpg": "/drAbrishamkar/static/media/prm3.f109f502ac30c8e48c4e.jpg",
+    "static/media/prm5.jpg": "/drAbrishamkar/static/media/prm5.3fc579e61e36ba755b75.jpg",
+    "static/media/prm4.jpg": "/drAbrishamkar/static/media/prm4.b49c2fac1d32b91fd643.jpg",
+    "static/media/tomor.png": "/drAbrishamkar/static/media/tomor.abdae264a623483616b6.png",
+    "static/media/brain.png": "/drAbrishamkar/static/media/brain.2d26fc8614ac610f5d2a.png",
+    "static/media/logo.svg": "/drAbrishamkar/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/drAbrishamkar/index.html",
+    "main.3cbb9540.css.map": "/drAbrishamkar/static/css/main.3cbb9540.css.map",
+    "main.c1f5d621.js.map": "/drAbrishamkar/static/js/main.c1f5d621.js.map",
+    "453.022d38ce.chunk.js.map": "/drAbrishamkar/static/js/453.022d38ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cbb9540.css",
+    "static/js/main.c1f5d621.js"
+  ]
+}
