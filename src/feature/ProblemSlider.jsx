@@ -72,7 +72,7 @@ export default function ProblemSlider() {
   }
 
   return (
-    <div className="w-[90%] mx-auto py-16 text-center">
+    <div className="w-[95%] mx-auto py-16 text-center">
      
       <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-3">
         حوزه فعالیت متخصص جراحی مغز و اعصاب
