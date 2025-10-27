@@ -1,4 +1,4 @@
-import React from "react";
+
 import prm1 from "../assests/img/problem/prm1.jpg";
 import prm2 from "../assests/img/problem/prm2.jpeg";
 import prm3 from "../assests/img/problem/prm3.jpg";
@@ -73,12 +73,12 @@ export default function ProblemSlider() {
 
   return (
     <div className="w-[90%] mx-auto py-16 text-center">
-      {/* عنوان و زیرعنوان */}
+     
       <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-3">
         حوزه فعالیت متخصص جراحی مغز و اعصاب
       </h2>
 
-      {/* خط گرادیانت */}
+   
       <div className="w-40 h-1 bg-gradient-to-r from-blue-800 via-cyan-500 to-blue-400 mx-auto rounded-full mb-5"></div>
 
       <p className="text-gray-600 text-base md:text-lg mb-10 leading-8 max-w-3xl mx-auto">
@@ -86,7 +86,7 @@ export default function ProblemSlider() {
         عارضه تحت درمان انتخاب می‌کند. در ادامه با برخی از مهم‌ترین این جراحی‌ها آشنا می‌شوید.
       </p>
 
-      {/* اسلایدر */}
+    
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -103,7 +103,7 @@ export default function ProblemSlider() {
       >
         {slides.map((group, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex  justify-center gap-4">
               {group.map((item) => (
                 <ProblemCard key={item.id} {...item} />
               ))}
