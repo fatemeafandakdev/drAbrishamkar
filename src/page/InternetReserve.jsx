@@ -18,26 +18,28 @@ function InternetReserve() {
 
      
       <aside className="bg-white w-full md:w-1/4 rounded-2xl shadow-xl p-6 h-fit sticky top-8">
-        <h2 className="text-xl font-bold text-blue-700 mb-4 text-center md:text-right">
-          نوع نوبت
-        </h2>
-        <div className="flex md:flex-col flex-row md:space-y-4 space-x-3 md:space-x-0 overflow-x-auto md:overflow-visible">
-          {types.map((type) => (
-            <button
-              key={type.id}
-              onClick={() => setSelectedType(type.name)}
-              className={`flex-1 md:flex-none w-full text-center p-4 rounded-xl border-2 transition-all duration-300 ${
-                selectedType === type.name
-                  ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white border-transparent shadow-md scale-105"
-                  : "bg-gray-50 hover:bg-blue-50 border-blue-200 text-gray-700"
-              }`}
-            >
-              <p className="font-semibold text-lg">{type.name}</p>
-              <p className="text-sm mt-1 opacity-80">{type.desc}</p>
-            </button>
-          ))}
-        </div>
-      </aside>
+  <h2 className="text-xl font-bold text-blue-700 mb-4 text-center md:text-right">
+    نوع نوبت
+  </h2>
+
+  <div className="grid grid-cols-1 gap-4 md:flex md:flex-col">
+    {types.map((type) => (
+      <button
+        key={type.id}
+        onClick={() => setSelectedType(type.name)}
+        className={`w-full text-center p-4 rounded-xl border-2 transition-all duration-300 ${
+          selectedType === type.name
+            ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white border-transparent shadow-md scale-105"
+            : "bg-gray-50 hover:bg-blue-50 border-blue-200 text-gray-700"
+        }`}
+      >
+        <p className="font-semibold text-lg">{type.name}</p>
+        <p className="text-sm mt-1 opacity-80">{type.desc}</p>
+      </button>
+    ))}
+  </div>
+</aside>
+
 
      
       <main className="flex-1 bg-white rounded-3xl shadow-2xl p-6 md:p-10 space-y-10">

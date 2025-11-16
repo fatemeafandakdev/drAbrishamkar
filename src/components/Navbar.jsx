@@ -16,7 +16,7 @@ function Navbar() {
       dir="rtl"
       className="w-[94%] bg-white shadow-md font-semibold text-gray-800 m-auto"
     >
-      {/* بخش خوش‌آمدگویی */}
+     
       <div className="flex flex-col md:flex-row justify-between items-center px-6 py-3 text-center md:text-right text-[18px] md:text-[20px] gap-3">
         <p>به وب‌سایت دکتر سعید ابریشمکار خوش آمدید</p>
 
@@ -36,7 +36,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* منوی اصلی */}
+     
       <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-8 py-3 md:py-4 gap-4 md:gap-0">
         <div className="flex justify-center md:justify-start">
           <img
@@ -70,71 +70,88 @@ function Navbar() {
 
     
       <div className="w-full bg-gray-50 border-t border-gray-200 py-6 px-4 md:px-10">
-        <div className="flex flex-col lg:flex-row flex-wrap justify-center lg:justify-between gap-6 text-gray-700 font-semibold text-[16px] md:text-[18px]">
-        
-          <div className="flex items-center gap-4 bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 flex-1 min-w-[250px] max-w-[500px]" onClick={()=>navigate("/internetReserve")}>
-            <div className="p-3 md:p-4 border border-[#65C5B4] rounded-full text-[#65C5B4]">
-              <FaPhoneAlt size={24} />
-            </div>
-            <div>
-              <p className="font-bold text-[#65C5B4] text-[18px] md:text-[20px]" >
-                رزرو نوبت تلفنی
-              </p>
-              <p className="text-[15px] md:text-[17px]">
-                ۰۳۱-۳۶۲۸۱۵۸۴ (تلفن گویا)
-              </p>
-            </div>
-          </div>
+       <div className="
+  grid 
+  grid-cols-1 
+  sm:grid-cols-2 
+  xl:flex 
+  xl:flex-row 
+  justify-center 
+  gap-6 
+  text-gray-700 
+  font-semibold 
+  text-[16px] 
+  md:text-[18px]
+">
+  
+  {/* تلفنی */}
+  <div
+    className="flex items-center gap-4 bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 flex-1 min-w-[250px] hover:scale-[1.02] transition"
+    onClick={() => navigate("/internetReserve")}
+  >
+    <div className="p-3 md:p-4 border border-[#65C5B4] rounded-full text-[#65C5B4]">
+      <FaPhoneAlt size={24} />
+    </div>
+    <div>
+      <p className="font-bold text-[#65C5B4] text-[18px] md:text-[20px]">
+        رزرو نوبت تلفنی
+      </p>
+      <p className="text-[15px] md:text-[17px]">
+        ۰۳۱-۳۶۲۸۱۵۸۴ (تلفن گویا)
+      </p>
+    </div>
+  </div>
 
-         
-          <Link
-            to={"/internetReserve"}
-            className="flex items-center gap-4 bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 flex-1 min-w-[250px] max-w-[500px] hover:bg-[#65C5B4]/10 transition"
-          >
-            <div className="p-3 md:p-4 border border-[#65C5B4] rounded-full text-[#65C5B4]">
-              <FaCalendarCheck size={24} />
-            </div>
-            <div>
-              <p className="font-bold text-[#65C5B4] text-[18px] md:text-[20px]">
-                گرفتن نوبت اینترنتی
-              </p>
-              <p className="text-[15px] md:text-[17px] leading-relaxed">
-                برای دریافت نوبت اینترنتی روی این بخش کلیک کنید
-              </p>
-            </div>
-          </Link>
 
-          {/* ساعت کاری */}
-          <div className="flex items-center gap-4 bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 flex-1 min-w-[250px] max-w-[500px]">
-            <div className="p-3 md:p-4 border border-[#65C5B4] rounded-full text-[#65C5B4]">
-              <FaClock size={24} />
-            </div>
-            <div>
-              <p className="font-bold text-[#65C5B4] text-[18px] md:text-[20px]">
-                ساعت کاری
-              </p>
-              <p className="text-[15px] md:text-[17px] leading-relaxed">
-                شنبه تا چهارشنبه - ۲۰:۰۰ تا ۱۶:۰۰ (به جز دوشنبه‌ها)
-              </p>
-            </div>
-          </div>
+  <Link
+    to={"/internetReserve"}
+    className="flex items-center gap-4 bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 flex-1 min-w-[250px] hover:bg-[#65C5B4]/10 hover:scale-[1.02] transition"
+  >
+    <div className="p-3 md:p-4 border border-[#65C5B4] rounded-full text-[#65C5B4]">
+      <FaCalendarCheck size={24} />
+    </div>
+    <div>
+      <p className="font-bold text-[#65C5B4] text-[18px] md:text-[20px]">
+        گرفتن نوبت اینترنتی
+      </p>
+      <p className="text-[15px] md:text-[17px]">
+        برای دریافت نوبت اینترنتی روی این بخش کلیک کنید
+      </p>
+    </div>
+  </Link>
 
-          {/* آدرس */}
-          <div className="flex items-center gap-4 bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 flex-1 min-w-[250px] max-w-[500px]">
-            <div className="p-3 md:p-4 border border-[#65C5B4] rounded-full text-[#65C5B4]">
-              <FaMapMarkerAlt size={24} />
-            </div>
-            <div>
-              <p className="font-bold text-[#65C5B4] text-[18px] md:text-[20px]">
-                آدرس
-              </p>
-              <p className="text-[15px] md:text-[17px] leading-relaxed">
-                اصفهان، خیابان شریعتی، روبه‌روی بیمارستان شریعتی، ساختمان فراز،
-                واحد ۱۰۳
-              </p>
-            </div>
-          </div>
-        </div>
+  {/* ساعت کاری */}
+  <div className="flex items-center gap-4 bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 flex-1 min-w-[250px] hover:scale-[1.02] transition">
+    <div className="p-3 md:p-4 border border-[#65C5B4] rounded-full text-[#65C5B4]">
+      <FaClock size={24} />
+    </div>
+    <div>
+      <p className="font-bold text-[#65C5B4] text-[18px] md:text-[20px]">
+        ساعت کاری
+      </p>
+      <p className="text-[15px] md:text-[17px]">
+        شنبه تا چهارشنبه - ۲۰:۰۰ تا ۱۶:۰۰ (به جز دوشنبه‌ها)
+      </p>
+    </div>
+  </div>
+
+  {/* آدرس */}
+  <div className="flex items-center gap-4 bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 flex-1 min-w-[250px] hover:scale-[1.02] transition">
+    <div className="p-3 md:p-4 border border-[#65C5B4] rounded-full text-[#65C5B4]">
+      <FaMapMarkerAlt size={24} />
+    </div>
+    <div>
+      <p className="font-bold text-[#65C5B4] text-[18px] md:text-[20px]">
+        آدرس
+      </p>
+      <p className="text-[15px] md:text-[17px]">
+        اصفهان، خیابان شریعتی، روبه‌روی بیمارستان شریعتی، ساختمان فراز،
+        واحد ۱۰۳
+      </p>
+    </div>
+  </div>
+</div>
+
       </div>
     </nav>
   );
